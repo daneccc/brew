@@ -8,26 +8,45 @@
 import UIKit
 
 class MainTabBarViewController: UITabBarController {
+    
+//    let segmentedControl: UISegmentedControl = {
+//        let sc = UISegmentedControl(items: ["Styles", "Hops", "Yeasts"])
+//        return sc
+//    }()
+    
+//    let tableView = UITableView(frame: .zero, style: .plain)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().barTintColor = UIColor.white
+
         view.backgroundColor = .systemOrange
+//        title = "Brew Beer"
         
-        let vc1 = UINavigationController(rootViewController: HomeViewController())
-        let vc2 = UINavigationController(rootViewController: ListViewController())
-        let vc3 = UINavigationController(rootViewController: CalculatorViewController())
-        let vc4 = UINavigationController(rootViewController: FavoritesViewController())
+//        let stackView = UIStackView(arrangedSubviews: [
+//        segmentedControl, tableView
+//        ])
+//        stackView.axis = .vertical
         
-        vc1.tabBarItem.image = UIImage(systemName: "house")
-        vc2.tabBarItem.image = UIImage(systemName: "list.dash")
-        vc3.tabBarItem.image = UIImage(systemName: "square.and.pencil")
-        vc4.tabBarItem.image = UIImage(systemName: "heart")
+//        view.addSubview(stackView)
         
-        vc1.title = "Home"
-        vc2.title = "List"
-        vc3.title = "Calculator"
-        vc4.title = "Favorites"
+        let vc1 = UINavigationController(rootViewController: StyleListViewController())
+        let vc2 = UINavigationController(rootViewController: HopsListViewController())
+        let vc3 = UINavigationController(rootViewController: YeastsListViewController())
+        let vc4 = UINavigationController(rootViewController: CalculatorViewController())
+//        let vc3 = UINavigationController(rootViewController: FavoritesViewController())
         
+        vc1.tabBarItem.image = UIImage(systemName: "list.bullet")
+        vc2.tabBarItem.image = UIImage(systemName: "list.bullet")
+        vc3.tabBarItem.image = UIImage(systemName: "list.bullet")
+        vc4.tabBarItem.image = UIImage(systemName: "plus.forwardslash.minus")
+
+        
+        vc1.title = "Styles"
+        vc2.title = "Hops"
+        vc3.title = "Yeasts"
+        vc4.title = "Calculator"
+
         tabBar.tintColor = .label
         
         setViewControllers([vc1, vc2, vc3, vc4], animated: true)

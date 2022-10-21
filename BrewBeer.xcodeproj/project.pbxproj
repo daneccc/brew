@@ -15,6 +15,22 @@
 		35095BFD28F5A7520061F168 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095BFC28F5A7520061F168 /* ListViewController.swift */; };
 		35095BFF28F830210061F168 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095BFE28F830210061F168 /* CalculatorViewController.swift */; };
 		35095C0128F830770061F168 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0028F830770061F168 /* FavoritesViewController.swift */; };
+		35095C0628F988020061F168 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0528F988020061F168 /* Constants.swift */; };
+		35095C0928F989280061F168 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0828F989280061F168 /* WebService.swift */; };
+		35095C0B28F989990061F168 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0A28F989990061F168 /* Style.swift */; };
+		35095C0D28F98CDC0061F168 /* StylesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0C28F98CDC0061F168 /* StylesListViewModel.swift */; };
+		35095C0F28F99EC60061F168 /* StyleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0E28F99EC60061F168 /* StyleListViewController.swift */; };
+		359C02D928FD7B0900CBEE03 /* StyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02D828FD7B0900CBEE03 /* StyleCell.swift */; };
+		359C02DB28FE3CC600CBEE03 /* StyleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02DA28FE3CC600CBEE03 /* StyleDetailViewController.swift */; };
+		359C02DD29003AA900CBEE03 /* HopsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02DC29003AA900CBEE03 /* HopsCell.swift */; };
+		359C02DF29003B7000CBEE03 /* Hops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02DE29003B7000CBEE03 /* Hops.swift */; };
+		359C02E129003B7B00CBEE03 /* Yeasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02E029003B7B00CBEE03 /* Yeasts.swift */; };
+		359C02E329003DBF00CBEE03 /* HopsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02E229003DBF00CBEE03 /* HopsListViewModel.swift */; };
+		359C02E529003EE600CBEE03 /* HopsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02E429003EE600CBEE03 /* HopsListViewController.swift */; };
+		359C02E72900C54600CBEE03 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02E62900C54600CBEE03 /* SegmentedViewController.swift */; };
+		359C02E9290159F500CBEE03 /* YeastsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02E8290159F500CBEE03 /* YeastsListViewController.swift */; };
+		359C02EB29015A3A00CBEE03 /* YeastsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02EA29015A3A00CBEE03 /* YeastsListViewModel.swift */; };
+		359C02ED29015BA500CBEE03 /* YeastsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02EC29015BA500CBEE03 /* YeastsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +44,22 @@
 		35095BFC28F5A7520061F168 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		35095BFE28F830210061F168 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		35095C0028F830770061F168 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		35095C0528F988020061F168 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		35095C0828F989280061F168 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		35095C0A28F989990061F168 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		35095C0C28F98CDC0061F168 /* StylesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesListViewModel.swift; sourceTree = "<group>"; };
+		35095C0E28F99EC60061F168 /* StyleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleListViewController.swift; sourceTree = "<group>"; };
+		359C02D828FD7B0900CBEE03 /* StyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCell.swift; sourceTree = "<group>"; };
+		359C02DA28FE3CC600CBEE03 /* StyleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleDetailViewController.swift; sourceTree = "<group>"; };
+		359C02DC29003AA900CBEE03 /* HopsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopsCell.swift; sourceTree = "<group>"; };
+		359C02DE29003B7000CBEE03 /* Hops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hops.swift; sourceTree = "<group>"; };
+		359C02E029003B7B00CBEE03 /* Yeasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yeasts.swift; sourceTree = "<group>"; };
+		359C02E229003DBF00CBEE03 /* HopsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopsListViewModel.swift; sourceTree = "<group>"; };
+		359C02E429003EE600CBEE03 /* HopsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopsListViewController.swift; sourceTree = "<group>"; };
+		359C02E62900C54600CBEE03 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
+		359C02E8290159F500CBEE03 /* YeastsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeastsListViewController.swift; sourceTree = "<group>"; };
+		359C02EA29015A3A00CBEE03 /* YeastsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeastsListViewModel.swift; sourceTree = "<group>"; };
+		359C02EC29015BA500CBEE03 /* YeastsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeastsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +92,9 @@
 		35095BE128F58FBC0061F168 /* BrewBeer */ = {
 			isa = PBXGroup;
 			children = (
+				359C02D728FD7AF800CBEE03 /* Cells */,
+				35095C0728F989110061F168 /* Services */,
+				35095C0428F987F50061F168 /* Utils */,
 				35095C0328F985170061F168 /* Managers */,
 				35095C0228F834E10061F168 /* Resources */,
 				35095BF928F5956A0061F168 /* ViewModels */,
@@ -78,6 +113,9 @@
 		35095BF628F595280061F168 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				35095C0A28F989990061F168 /* Style.swift */,
+				359C02DE29003B7000CBEE03 /* Hops.swift */,
+				359C02E029003B7B00CBEE03 /* Yeasts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -96,6 +134,11 @@
 				35095BFC28F5A7520061F168 /* ListViewController.swift */,
 				35095BFE28F830210061F168 /* CalculatorViewController.swift */,
 				35095C0028F830770061F168 /* FavoritesViewController.swift */,
+				35095C0E28F99EC60061F168 /* StyleListViewController.swift */,
+				359C02DA28FE3CC600CBEE03 /* StyleDetailViewController.swift */,
+				359C02E429003EE600CBEE03 /* HopsListViewController.swift */,
+				359C02E62900C54600CBEE03 /* SegmentedViewController.swift */,
+				359C02E8290159F500CBEE03 /* YeastsListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,6 +146,9 @@
 		35095BF928F5956A0061F168 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				35095C0C28F98CDC0061F168 /* StylesListViewModel.swift */,
+				359C02E229003DBF00CBEE03 /* HopsListViewModel.swift */,
+				359C02EA29015A3A00CBEE03 /* YeastsListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -119,6 +165,32 @@
 			children = (
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		35095C0428F987F50061F168 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35095C0528F988020061F168 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		35095C0728F989110061F168 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				35095C0828F989280061F168 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		359C02D728FD7AF800CBEE03 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				359C02D828FD7B0900CBEE03 /* StyleCell.swift */,
+				359C02DC29003AA900CBEE03 /* HopsCell.swift */,
+				359C02EC29015BA500CBEE03 /* YeastsCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,13 +262,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359C02E129003B7B00CBEE03 /* Yeasts.swift in Sources */,
+				35095C0928F989280061F168 /* WebService.swift in Sources */,
 				35095BE728F58FBC0061F168 /* MainTabBarViewController.swift in Sources */,
+				359C02ED29015BA500CBEE03 /* YeastsCell.swift in Sources */,
+				359C02DD29003AA900CBEE03 /* HopsCell.swift in Sources */,
 				35095BE328F58FBC0061F168 /* AppDelegate.swift in Sources */,
 				35095C0128F830770061F168 /* FavoritesViewController.swift in Sources */,
+				35095C0F28F99EC60061F168 /* StyleListViewController.swift in Sources */,
+				359C02E72900C54600CBEE03 /* SegmentedViewController.swift in Sources */,
+				359C02D928FD7B0900CBEE03 /* StyleCell.swift in Sources */,
+				359C02E329003DBF00CBEE03 /* HopsListViewModel.swift in Sources */,
+				359C02E9290159F500CBEE03 /* YeastsListViewController.swift in Sources */,
+				35095C0D28F98CDC0061F168 /* StylesListViewModel.swift in Sources */,
 				35095BE528F58FBC0061F168 /* SceneDelegate.swift in Sources */,
 				35095BFD28F5A7520061F168 /* ListViewController.swift in Sources */,
 				35095BFF28F830210061F168 /* CalculatorViewController.swift in Sources */,
 				35095BFB28F598B60061F168 /* HomeViewController.swift in Sources */,
+				35095C0628F988020061F168 /* Constants.swift in Sources */,
+				35095C0B28F989990061F168 /* Style.swift in Sources */,
+				359C02DB28FE3CC600CBEE03 /* StyleDetailViewController.swift in Sources */,
+				359C02DF29003B7000CBEE03 /* Hops.swift in Sources */,
+				359C02E529003EE600CBEE03 /* HopsListViewController.swift in Sources */,
+				359C02EB29015A3A00CBEE03 /* YeastsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
