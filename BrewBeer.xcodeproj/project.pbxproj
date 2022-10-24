@@ -20,6 +20,8 @@
 		35095C0B28F989990061F168 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0A28F989990061F168 /* Style.swift */; };
 		35095C0D28F98CDC0061F168 /* StylesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0C28F98CDC0061F168 /* StylesListViewModel.swift */; };
 		35095C0F28F99EC60061F168 /* StyleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35095C0E28F99EC60061F168 /* StyleListViewController.swift */; };
+		35937EF82906A42800E62311 /* HopsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35937EF72906A42800E62311 /* HopsDetailViewController.swift */; };
+		35937EFA2906A65F00E62311 /* YeastsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35937EF92906A65F00E62311 /* YeastsDetailViewController.swift */; };
 		359C02D928FD7B0900CBEE03 /* StyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02D828FD7B0900CBEE03 /* StyleCell.swift */; };
 		359C02DB28FE3CC600CBEE03 /* StyleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02DA28FE3CC600CBEE03 /* StyleDetailViewController.swift */; };
 		359C02DD29003AA900CBEE03 /* HopsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C02DC29003AA900CBEE03 /* HopsCell.swift */; };
@@ -49,6 +51,8 @@
 		35095C0A28F989990061F168 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		35095C0C28F98CDC0061F168 /* StylesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesListViewModel.swift; sourceTree = "<group>"; };
 		35095C0E28F99EC60061F168 /* StyleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleListViewController.swift; sourceTree = "<group>"; };
+		35937EF72906A42800E62311 /* HopsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopsDetailViewController.swift; sourceTree = "<group>"; };
+		35937EF92906A65F00E62311 /* YeastsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeastsDetailViewController.swift; sourceTree = "<group>"; };
 		359C02D828FD7B0900CBEE03 /* StyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCell.swift; sourceTree = "<group>"; };
 		359C02DA28FE3CC600CBEE03 /* StyleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleDetailViewController.swift; sourceTree = "<group>"; };
 		359C02DC29003AA900CBEE03 /* HopsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopsCell.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				359C02E429003EE600CBEE03 /* HopsListViewController.swift */,
 				359C02E62900C54600CBEE03 /* SegmentedViewController.swift */,
 				359C02E8290159F500CBEE03 /* YeastsListViewController.swift */,
+				35937EF72906A42800E62311 /* HopsDetailViewController.swift */,
+				35937EF92906A65F00E62311 /* YeastsDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -275,8 +281,10 @@
 				359C02E329003DBF00CBEE03 /* HopsListViewModel.swift in Sources */,
 				359C02E9290159F500CBEE03 /* YeastsListViewController.swift in Sources */,
 				35095C0D28F98CDC0061F168 /* StylesListViewModel.swift in Sources */,
+				35937EF82906A42800E62311 /* HopsDetailViewController.swift in Sources */,
 				35095BE528F58FBC0061F168 /* SceneDelegate.swift in Sources */,
 				35095BFD28F5A7520061F168 /* ListViewController.swift in Sources */,
+				35937EFA2906A65F00E62311 /* YeastsDetailViewController.swift in Sources */,
 				35095BFF28F830210061F168 /* CalculatorViewController.swift in Sources */,
 				35095BFB28F598B60061F168 /* HomeViewController.swift in Sources */,
 				35095C0628F988020061F168 /* Constants.swift in Sources */,

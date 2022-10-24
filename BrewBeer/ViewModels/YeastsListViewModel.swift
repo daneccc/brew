@@ -31,4 +31,9 @@ struct YeastsViewModel {
     var name: String {
         yeasts.name
     }
+    
+    var company: String {
+        yeasts.company
+    }
+
 }

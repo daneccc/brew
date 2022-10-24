@@ -14,6 +14,7 @@ class CalculatorViewController: UIViewController {
     var currentAnswer: UITextField!
     let resp = UITextField()
     var sendButton = [UIButton]()
+    var txt: UILabel!
     
     let abv: Double = 0.0
     
@@ -30,10 +31,14 @@ class CalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
+        txt = UILabel()
+        txt.text = "Calculates alcohol by volume (abv) in percentage from final and original gravity. To use plato or brix units for gravity, add the °P or °Bx after the value."
+        txt.numberOfLines = 0
+
         view = UIView()
         view.backgroundColor = .systemCyan
         
+        view.addSubview(txt)
         displayCalculatorAbvFields(textField: originalGravity, placeHolder: "Original gravity")
         displayCalculatorAbvFields(textField: finalGravity, placeHolder: "Final gravity")
 
@@ -46,10 +51,10 @@ class CalculatorViewController: UIViewController {
         
         resp.placeholder = "OG"
         view.addSubview(resp)
-        
+                
         calculateAlcooholByVolume(dado: "Dado", completionHandler: { abv in
             DispatchQueue.main.async {
-                self.resultLabel.text = "abv: \(abv ?? 0)"
+                self.resultLabel.text = "Alcohol by volume (ABV) = \n\(abv ?? 0)"
             }
         })
         
@@ -59,13 +64,22 @@ class CalculatorViewController: UIViewController {
         
         resultLabel = UILabel()
         resultLabel.translatesAutoresizingMaskIntoConstraints = false
-        resultLabel.textAlignment = .right
+        txt.translatesAutoresizingMaskIntoConstraints = false
+
+        resultLabel.textAlignment = .left
+        resultLabel.numberOfLines = 0
         //resultLabel.text = "Alcohol by volume is 0 \(abv)"
         view.addSubview(resultLabel)
         
         NSLayoutConstraint.activate([
-            resultLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.centerYAnchor),
-            resultLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
+            
+            txt.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: -10),
+            txt.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
+            txt.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
+            
+            resultLabel.topAnchor.constraint(equalTo: txt.bottomAnchor,constant: 150),
+            resultLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
+            resultLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
             
         ])
     }
@@ -76,7 +90,7 @@ class CalculatorViewController: UIViewController {
         textField.backgroundColor = .white
         textField.textColor = UIColor.black
         textField.layer.shadowRadius = 3.0
-//        textField.keyboardType = .numberPad
+        textField.keyboardType = .numberPad
         
         self.view.addSubview(textField)
     }

@@ -7,45 +7,42 @@
 
 import UIKit
 
-class StyleDetailViewController: UIViewController {
+class HopsDetailViewController: UIViewController {
     
-    var styleName: String
-    var styleDescription: String
-    var original_gravity_min: Double
-    var original_gravity_max: Double
-    var final_gravity_min: Double
-    var final_gravity_max: Double
-    var abv_min: Double
-    var abv_max: Double
-    var ibu_min: Double
-    var ibu_max: Double
-    var color_srm_min: Double
-    var color_srm_max: Double
+//    let name: String
+//    let alpha_acid_min: Double
+//    let alpha_acid_max: Double
+//    let beta_acid_min: Double
+//    let beta_acid_max: Double
+//    let purpose: [String] // array
+//    let country: String
+//    let description: String
+//    let substitutions: [String] // array
+    
+    var name: String
+//    var alpha_acid_min: Double
+//    var alpha_acid_max: Double
+//    var beta_acid_min: Double
+//    var beta_acid_max: Double
+    var descriptionHops: String
+    let country: String
+
     
     let descriptionLabel: UILabel = {
         let descriptionLabel = UILabel()
         return descriptionLabel
     }()
     
-    let numberLabel: UILabel = {
-        let numberLabel = UILabel()
-        return numberLabel
+    let countryLabel: UILabel = {
+        let countryLabel = UILabel()
+        return countryLabel
     }()
 
-    internal init(data: StylesViewModel) {
+    internal init(data: HopsViewModel) {
         
-        self.styleName = data.name
-        self.styleDescription = data.description
-        self.original_gravity_min = data.original_gravity_min
-        self.original_gravity_max = data.original_gravity_min
-        self.final_gravity_max = data.final_gravity_max
-        self.final_gravity_min = data.final_gravity_min
-        self.abv_max = data.abv_max
-        self.abv_min = data.abv_min
-        self.ibu_min = data.ibu_min
-        self.ibu_max = data.ibu_max
-        self.color_srm_min = data.color_srm_min
-        self.color_srm_max = data.color_srm_max
+        self.name = data.name
+        self.descriptionHops = data.description
+        self.country = data.country
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -61,24 +58,24 @@ class StyleDetailViewController: UIViewController {
         configure()
         
         // self.view.addSubview(descriptionLabel)
-        self.view.addSubview(numberLabel)
+        // self.view.addSubview(countryLabel)
     }
     
     
     func configure() {
-        title = styleName
+        title = name
 
         descriptionLabel.numberOfLines = 0
-        descriptionLabel.text = "Description of the beer style: \n\(styleDescription)"
+        descriptionLabel.text = "Description: \n\(descriptionHops)"
         //descriptionLabel.font = UIFont.boldSystemFont(ofSize: 16.0)
         view.backgroundColor = .systemYellow
         
-        numberLabel.text = "Original gravity min \(original_gravity_min)"
+        countryLabel.text = "Country: \(country)"
         
         self.view.addSubview(descriptionLabel)
-//        self.view.addSubview(numberLabel)
+        self.view.addSubview(countryLabel)
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        numberLabel.translatesAutoresizingMaskIntoConstraints = false
+        countryLabel.translatesAutoresizingMaskIntoConstraints = false
 
         
         NSLayoutConstraint.activate([
@@ -86,9 +83,9 @@ class StyleDetailViewController: UIViewController {
             descriptionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
             descriptionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
             
-            numberLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor,constant: 20),
-            numberLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
-            numberLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
+            countryLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor,constant: 20),
+            countryLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
+            countryLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
             
         ])
         
@@ -106,3 +103,4 @@ class StyleDetailViewController: UIViewController {
         ])
     }
 }
+

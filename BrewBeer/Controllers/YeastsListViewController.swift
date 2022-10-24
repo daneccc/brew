@@ -43,10 +43,10 @@ class YeastsListViewController: UITableViewController {
         
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let nextViewController = StyleDetailViewController(data: vm.hops[indexPath.row])
-//        self.navigationController?.pushViewController(nextViewController, animated: true)
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextViewController = YeastsDetailViewController(data: vm.yeasts[indexPath.row])
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
     
     private func populateYeasts() async {
         await vm.populateYeasts(url: Constants.URLs.allYeasts)

@@ -31,4 +31,12 @@ struct HopsViewModel {
     var name: String {
         hops.name
     }
+    
+    var description: String {
+        hops.description
+    }
+    
+    var country: String {
+        hops.country
+    }
 }

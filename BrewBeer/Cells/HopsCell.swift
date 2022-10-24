@@ -41,6 +41,4 @@ class HopsCell: UITableViewCell {
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
-    
 }
-

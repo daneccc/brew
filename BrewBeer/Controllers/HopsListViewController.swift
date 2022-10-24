@@ -42,10 +42,10 @@ class HopsListViewController: UITableViewController {
         
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let nextViewController = StyleDetailViewController(data: vm.hops[indexPath.row])
-//        self.navigationController?.pushViewController(nextViewController, animated: true)
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextViewController = HopsDetailViewController(data: vm.hops[indexPath.row])
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
     
     private func populateHops() async {
         await vm.populateHops(url: Constants.URLs.allHops)
