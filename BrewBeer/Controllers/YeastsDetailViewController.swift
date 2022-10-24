@@ -12,11 +12,6 @@ class YeastsDetailViewController: UIViewController {
 
     var name: String
     var company: String
-
-    let descriptionLabel: UILabel = {
-        let descriptionLabel = UILabel()
-        return descriptionLabel
-    }()
     
     let companyLabel: UILabel = {
         let companyLabel = UILabel()
@@ -52,18 +47,6 @@ class YeastsDetailViewController: UIViewController {
             companyLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 30),
             companyLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
             companyLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-        ])
-    }
-        
-    func configCardView() {
-        self.view.addSubview(descriptionLabel)
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            descriptionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: 50),
-            descriptionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
-            descriptionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            
         ])
     }
 }
