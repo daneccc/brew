@@ -10,7 +10,6 @@ import UIKit
 
 class YeastsDetailViewController: UIViewController {
 
-    
     var name: String
     var company: String
 
@@ -25,10 +24,8 @@ class YeastsDetailViewController: UIViewController {
     }()
 
     internal init(data: YeastsViewModel) {
-        
         self.name = data.name
         self.company = data.company
-
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -39,39 +36,23 @@ class YeastsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        
-        // self.view.addSubview(descriptionLabel)
-        // self.view.addSubview(countryLabel)
     }
-    
     
     func configure() {
         title = name
-
         companyLabel.numberOfLines = 0
         companyLabel.text = "Company: \(company)"
         //descriptionLabel.font = UIFont.boldSystemFont(ofSize: 16.0)
         view.backgroundColor = .systemYellow
-        
-//        countryLabel.text = "Country: \(country)"
-        
+                
         self.view.addSubview(companyLabel)
-//        self.view.addSubview(countryLabel)
         companyLabel.translatesAutoresizingMaskIntoConstraints = false
-//        countryLabel.translatesAutoresizingMaskIntoConstraints = false
-
         
         NSLayoutConstraint.activate([
             companyLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 30),
             companyLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
             companyLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            
-//            countryLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor,constant: 20),
-//            countryLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
-//            countryLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            
         ])
-        
     }
         
     func configCardView() {
@@ -86,4 +67,3 @@ class YeastsDetailViewController: UIViewController {
         ])
     }
 }
-

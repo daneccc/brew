@@ -53,10 +53,5 @@ class YeastsListViewController: UITableViewController {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-        // print(vm.styles)
     }
 }
-
-
-
-

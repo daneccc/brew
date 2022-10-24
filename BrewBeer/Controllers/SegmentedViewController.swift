@@ -23,9 +23,6 @@ class SegmentedViewController: UIViewController, UITableViewDataSource, UITableV
         return cell
     }
     
-    
-    
-    
     let segmentedControl: UISegmentedControl = {
         let sc = UISegmentedControl(items: ["Styles", "Hops", "Yeasts"])
         sc.selectedSegmentIndex = 0
@@ -35,7 +32,6 @@ class SegmentedViewController: UIViewController, UITableViewDataSource, UITableV
     let styles = ["style 01", "style 02", "style 03"]
     let hops = ["hops 01", "hops 02", "hops 03"]
     let yeasts = ["yeasts 01", "yeasts 02", "yeasts 03"]
-    
     
     let tableView = UITableView(frame: .zero, style: .plain)
     
@@ -57,8 +53,6 @@ class SegmentedViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.dataSource = StyleListViewController().tableView.dataSource
         tableView.delegate = StyleListViewController().tableView.delegate
         
-        
-        
         view.addSubview(stackView)
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -69,8 +63,5 @@ class SegmentedViewController: UIViewController, UITableViewDataSource, UITableV
             stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
         ])
-        
-        
     }
-    
 }

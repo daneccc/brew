@@ -9,25 +9,10 @@ import UIKit
 
 class HopsDetailViewController: UIViewController {
     
-//    let name: String
-//    let alpha_acid_min: Double
-//    let alpha_acid_max: Double
-//    let beta_acid_min: Double
-//    let beta_acid_max: Double
-//    let purpose: [String] // array
-//    let country: String
-//    let description: String
-//    let substitutions: [String] // array
-    
     var name: String
-//    var alpha_acid_min: Double
-//    var alpha_acid_max: Double
-//    var beta_acid_min: Double
-//    var beta_acid_max: Double
     var descriptionHops: String
     let country: String
 
-    
     let descriptionLabel: UILabel = {
         let descriptionLabel = UILabel()
         return descriptionLabel
@@ -53,14 +38,9 @@ class HopsDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = .systemYellow
         
         configure()
-        
-        // self.view.addSubview(descriptionLabel)
-        // self.view.addSubview(countryLabel)
     }
-    
     
     func configure() {
         title = name
@@ -77,7 +57,6 @@ class HopsDetailViewController: UIViewController {
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         countryLabel.translatesAutoresizingMaskIntoConstraints = false
 
-        
         NSLayoutConstraint.activate([
             descriptionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 30),
             descriptionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
@@ -86,9 +65,7 @@ class HopsDetailViewController: UIViewController {
             countryLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor,constant: 20),
             countryLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
             countryLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            
         ])
-        
     }
         
     func configCardView() {
@@ -103,4 +80,3 @@ class HopsDetailViewController: UIViewController {
         ])
     }
 }
-

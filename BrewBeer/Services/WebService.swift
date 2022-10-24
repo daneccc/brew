@@ -43,5 +43,3 @@ class WebService {
         return try JSONDecoder().decode([Yeasts].self, from: data)
     }
 }
-
-
