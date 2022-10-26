@@ -56,30 +56,22 @@ class StyleDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = .systemYellow
-        
         configure()
-        
-        // self.view.addSubview(descriptionLabel)
-        self.view.addSubview(numberLabel)
     }
     
-    
     func configure() {
+        view.backgroundColor = .systemYellow
         title = styleName
-
+        
         descriptionLabel.numberOfLines = 0
         descriptionLabel.text = "Description of the beer style: \n\(styleDescription)"
-        //descriptionLabel.font = UIFont.boldSystemFont(ofSize: 16.0)
-        view.backgroundColor = .systemYellow
-        
-        numberLabel.text = "Original gravity min \(original_gravity_min)"
-        
-        self.view.addSubview(descriptionLabel)
-//        self.view.addSubview(numberLabel)
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        numberLabel.text = "Original gravity min \(original_gravity_min)"
         numberLabel.translatesAutoresizingMaskIntoConstraints = false
 
+        self.view.addSubview(descriptionLabel)
+        self.view.addSubview(numberLabel)
         
         NSLayoutConstraint.activate([
             descriptionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 30),
@@ -89,20 +81,6 @@ class StyleDetailViewController: UIViewController {
             numberLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor,constant: 20),
             numberLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
             numberLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            
-        ])
-        
-    }
-        
-    func configCardView() {
-        self.view.addSubview(descriptionLabel)
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            descriptionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: 50),
-            descriptionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
-            descriptionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
-            
         ])
     }
 }
